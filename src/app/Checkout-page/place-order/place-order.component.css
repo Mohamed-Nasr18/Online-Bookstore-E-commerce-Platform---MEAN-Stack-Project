@@ -1,0 +1,86 @@
+.order-summary {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+}
+
+.options-section {
+  margin-bottom: 20px;
+}
+
+.coupons-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.apply-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.price-row.discount {
+  color: green;
+}
+
+.price-label {
+  color: #666;
+}
+
+.price-value {
+  font-weight: 500;
+}
+
+.price-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px dashed #ccc;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff9f00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.place-order-btn:hover {
+  background-color: #ff8c00;
+}
