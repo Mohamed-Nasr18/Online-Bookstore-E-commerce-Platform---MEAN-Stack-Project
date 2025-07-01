@@ -1,0 +1,107 @@
+.cart-title {
+  background-color: #15475b;
+  height: 60px;
+  align-content: center;
+  padding-left: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+  position: relative;
+}
+
+.book-img {
+  margin-right: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.details {
+  flex: 1;
+}
+
+.details h4 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.stock {
+  color: #007600;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d5d9d9;
+  background-color: #f0f2f2;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity button:hover {
+  background-color: #e3e6e6;
+}
+
+.quantity input {
+  width: 36px;
+  height: 26px;
+  text-align: center;
+  margin: 0 5px;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.remove {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #cc0c39;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.remove:hover {
+  color: #a2123a;
+}
+
+/* Divider style */
+.cart-item:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 10px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
