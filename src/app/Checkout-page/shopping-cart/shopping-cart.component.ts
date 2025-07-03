@@ -11,13 +11,13 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 export class ShoppingCartComponent {
   @Input() cartItems: any[] = [];
 
-  increment(item: any) {
-    item.quantity++;
-  }
+  // increment(item: any) {
+  //   item.quantity++;
+  // }
 
-  decrement(item: any) {
-    if (item.quantity > 1) item.quantity--;
-  }
+  // decrement(item: any) {
+  //   if (item.quantity > 1) item.quantity--;
+  // }
 
   remove(item: any) {
     this.cartItems = this.cartItems.filter(i => i !== item);
