@@ -1,0 +1,18 @@
+<div class="cart-header">
+  <h2 class="cart-title">Shopping Cart</h2>
+</div>
+
+<div *ngFor="let item of cartItems" class="cart-item">
+  <img ngSrc="{{ item.image }}" width="80" height="100" priority class="book-img" />
+  <div class="details">
+    <h4>{{ item.title }}</h4>
+    <!-- <p class="stock">In Stock</p> --> 
+    <!-- <div class="quantity">
+      <button (click)="decrement(item)">-</button>
+      <input type="text" [value]="item.quantity" readonly />
+      <button (click)="increment(item)">+</button>
+    </div> -->
+  </div>
+  <div class="price">${{ item.price | number:'1.2-2' }}</div> 
+  <button class="remove" (click)="remove(item)">🗑️</button>
+</div>

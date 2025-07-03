@@ -1,0 +1,40 @@
+<div class="order-summary">
+  <div class="options-section">
+  </div>
+
+  <div class="price-details-section">
+    <h3 class="section-header">Price Details</h3>
+    
+    <div class="price-row">
+      <span class="price-label">Total MRP</span>
+      <span class="price-value">${{ totalMRP }}</span>
+    </div>
+    
+    <div class="price-row discount">
+      <span class="price-label">Bag Discount</span>
+      <span class="price-value">-${{ discount }}</span>
+    </div>
+    
+    <div class="price-row">
+      <span class="price-label">Estimated Tax</span>
+      <span class="price-value">${{ estimatedTax }}</span>
+    </div>
+    
+    <div class="price-row">
+      <span class="price-label">EMI Eligibility</span>
+      <span class="price-link">Details</span>
+    </div>
+    
+    <div class="price-row">
+      <span class="price-label">Delivery Charges</span>
+      <span class="price-value">Free</span>
+    </div>
+    
+    <div class="total-row">
+      <span class="total-label">Total</span>
+      <span class="total-value">${{ total }}</span>
+    </div>
+  </div>
+
+  <button class="place-order-btn">Place order</button>
+</div>
