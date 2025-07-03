@@ -1,0 +1,283 @@
+
+<!-- <div class="container">
+    <div class="row">
+        <h1>Browse Books</h1>
+        <div class="row col-lg-12">
+
+            <div class="row d-flex flex-wrap card-body col-3 m-3">
+                <div class="book-img row-cols-lg-6 h-100">
+                    <img src="../../assets/home/sidebar/logo-mini-white.png"  class="h-100 w-100" alt="Book Image">
+                </div>
+                <div class="book-img col-lg-6 h-100">
+                    <h6 class="card-title mb-1 text-truncate">Book Title</h6>
+                    <p class="card-text text-muted small">Author Name</p>
+                    <button class="btn btn-sm btn-outline-primary w-100">View</button>
+
+                </div>
+            </div>
+
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div>
+            <div class="card-body col-3 m-3">
+
+            </div> 
+
+
+        </div>
+    </div>
+</div> -->
+
+
+
+    <div class="main-container">
+        <div class="page-header">
+            <h1 class="page-title">Browse Books</h1>
+            <p class="page-subtitle">Discover your next great read from our curated collection</p>
+        </div>
+
+        <div class="search-filters">
+            <div class="row align-items-end">
+                <div class="col-md-6 mb-3">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="form-control search-input" placeholder="Search books, authors, or genres...">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Fiction</button>
+                        <button class="filter-btn">Non-Fiction</button>
+                        <button class="filter-btn">Science</button>
+                        <button class="filter-btn">History</button>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <div class="view-toggle">
+                        <button class="view-btn active" onclick="toggleView('grid')">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="view-btn" onclick="toggleView('list')">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="booksContainer" class="books-grid">
+            <!-- Book Card 1 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <i class="fas fa-book book-placeholder"></i>
+                </div>
+                <h6 class="book-title">The Art of Clean Code</h6>
+                <p class="book-author">Robert C. Martin</p>
+                <div class="book-meta">
+                    <div class="book-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.5</span>
+                    </div>
+                    <div class="book-price">$29.99</div>
+                </div>
+                <div class="book-actions">
+                    <button class="btn btn-view">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </button>
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 2 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <i class="fas fa-book book-placeholder"></i>
+                </div>
+                <h6 class="book-title">JavaScript: The Good Parts</h6>
+                <p class="book-author">Douglas Crockford</p>
+                <div class="book-meta">
+                    <div class="book-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.2</span>
+                    </div>
+                    <div class="book-price">$24.99</div>
+                </div>
+                <div class="book-actions">
+                    <button class="btn btn-view">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </button>
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 3 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <i class="fas fa-book book-placeholder"></i>
+                </div>
+                <h6 class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</h6>
+                <p class="book-author">Gang of Four</p>
+                <div class="book-meta">
+                    <div class="book-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.7</span>
+                    </div>
+                    <div class="book-price">$39.99</div>
+                </div>
+                <div class="book-actions">
+                    <button class="btn btn-view">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </button>
+                    <button class="btn-favorite active">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 4 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <i class="fas fa-book book-placeholder"></i>
+                </div>
+                <h6 class="book-title">Angular Development with TypeScript</h6>
+                <p class="book-author">Yakov Fain</p>
+                <div class="book-meta">
+                    <div class="book-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.3</span>
+                    </div>
+                    <div class="book-price">$34.99</div>
+                </div>
+                <div class="book-actions">
+                    <button class="btn btn-view">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </button>
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 5 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <i class="fas fa-book book-placeholder"></i>
+                </div>
+                <h6 class="book-title">You Don't Know JS</h6>
+                <p class="book-author">Kyle Simpson</p>
+                <div class="book-meta">
+                    <div class="book-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                    <div class="book-price">$19.99</div>
+                </div>
+                <div class="book-actions">
+                    <button class="btn btn-view">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </button>
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Book Card 6 -->
+            <div class="book-card">
+                <div class="book-image">
+                    <i class="fas fa-book book-placeholder"></i>
+                </div>
+                <h6 class="book-title">Refactoring: Improving the Design of Existing Code</h6>
+                <p class="book-author">Martin Fowler</p>
+                <div class="book-meta">
+                    <div class="book-rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.4</span>
+                    </div>
+                    <div class="book-price">$32.99</div>
+                </div>
+                <div class="book-actions">
+                    <button class="btn btn-view">
+                        <i class="fas fa-eye"></i>
+                        View Details
+                    </button>
+                    <button class="btn-favorite">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-cart">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>

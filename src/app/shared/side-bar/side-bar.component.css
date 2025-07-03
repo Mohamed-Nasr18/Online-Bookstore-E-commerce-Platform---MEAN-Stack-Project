@@ -1,0 +1,90 @@
+.break{
+    width: 100%;
+    color: white;
+}
+/* Sidebar container */
+.sidebar {
+    background-color: #1f1f2e; /* Darker than Bootstrap's default */
+    color: #ffffff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Sidebar links */
+.sidebar .nav-link {
+    color: #adb5bd;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus,
+.sidebar .nav-link.active {
+    background-color: #343a40;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Icons */
+.sidebar i {
+    color: #0dcaf0; /* Bootstrap info color */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Section Titles */
+.sidebar span.fs-5 {
+    font-weight: 600;
+    margin: 10px 0 10px 5px;
+    color: #ffffff;
+}
+
+/* Collapse menu items padding */
+.sidebar ul ul li a {
+    font-size: 14px;
+    color: #ced4da;
+    /* margin-left: 25px; */
+}
+
+.sidebar ul ul li{
+    cursor: pointer;
+}
+
+.sidebar ul ul li i {
+    font-size: 1rem;
+    color: #ffc107;
+}
+
+/* Avatar & Dropdown */
+.sidebar .dropdown-toggle {
+    color: #ffffff;
+}
+
+.sidebar .dropdown-menu {
+    background-color: #343a40;
+}
+
+/* Responsive hide text on mobile */
+@media (max-width: 768px) {
+    .sidebar .d-sm-inline {
+        display: none !important;
+    }
+
+    .sidebar i {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sidebar .nav-link {
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .sidebar .dropdown-toggle span {
+        display: none;
+    }
+}
+
