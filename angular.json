@@ -28,7 +28,21 @@
                 "node_modules/swiper/swiper-bundle.min.css",
                 "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/booksto.min.css",
+              "src/assets/css/custom.min.css",
+              "src/assets/css/customizer.min.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/ionicons.min.css",
+              "src/assets/css/line-awesome.min.css",
+              "src/assets/css/libs.min.css",
+              "src/assets/css/remixicon.css",
+              "src/assets/css/style.css",
+              "src/assets/css/rtl.min.css",
+              "src/assets/css/style_1.css",
+              "src/assets/css/style_2.css",
+              "src/assets/css/webfont.css"
             ],
             "scripts": []
           },
