@@ -1,0 +1,47 @@
+<p>file-manager works!</p>
+<!-- src/app/file-manager/file-manager.component.html -->
+<div class="file-manager-container">
+  <h2 class="title">File Manager</h2>
+
+  <!-- File Upload Section -->
+  <div class="upload-section">
+    <h3 class="section-title">Upload New File</h3>
+    <input type="file" (change)="onFileSelected($event)" class="file-input">
+    <button (click)="uploadFile()" [disabled]="!selectedFile || uploading" class="upload-button">
+      {{ uploading ? 'Uploading...' : 'Upload File' }}
+    </button>
+    <div *ngIf="selectedFile" class="selected-file-info">
+      Selected: {{ selectedFile.name }} ({{ (selectedFile.size / 1024 / 1024).toFixed(2) }} MB)
+    </div>
+  </div>
+
+  <!-- Messages -->
+  <div *ngIf="errorMessage" class="message error-message">
+    {{ errorMessage }}
+  </div>
+  <div *ngIf="successMessage" class="message success-message">
+    {{ successMessage }}
+  </div>
+
+  <!-- File List Section -->
+  <div class="file-list-section">
+    <h3 class="section-title">Your Files</h3>
+    <div *ngIf="loadingFiles" class="loading-indicator">Loading files...</div>
+    <div *ngIf="!loadingFiles && files.length === 0" class="no-files-message">
+      No files uploaded yet.
+    </div>
+
+    <ul *ngIf="files.length > 0" class="file-list">
+      <li *ngFor="let file of files" class="file-item">
+        <span class="file-name">{{ file.fileName }}</span>
+        <span class="file-details">
+          ({{ (file.size / 1024).toFixed(2) }} KB) - {{ file.fileType }}
+        </span>
+        <div class="file-actions">
+          <a [href]="getDownloadUrl(file)" target="_blank" class="action-button download-button">Download</a>
+          <button (click)="deleteFile(file._id)" class="action-button delete-button">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

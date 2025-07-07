@@ -1,0 +1,13 @@
+<!-- src/app/app.component.html -->
+<nav style="padding: 20px; background-color: #f0f0f0; border-bottom: 1px solid #ddd; text-align: center;">
+  <a routerLink="/files" style="text-decoration: none; color: #007bff; font-weight: bold; font-size: 1.2em; padding: 10px 15px; border-radius: 5px; transition: background-color 0.3s;"
+     onmouseover="this.style.backgroundColor='#e9ecef'" onmouseout="this.style.backgroundColor='#f0f0f0'">
+    Go to File Manager
+  </a>
+  <!-- Other navigation links can go here -->
+</nav>
+
+<div style="margin-top: 20px;">
+  <!-- This is where your routed components (like FileManagerComponent) will be displayed -->
+  <router-outlet></router-outlet>
+</div>
